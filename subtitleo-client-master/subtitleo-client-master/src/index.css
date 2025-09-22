@@ -1,0 +1,175 @@
+/* ==Tailwind Imports== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==Fonts== */
+/* == 1. ==  */
+/* == Red Hat Display ==  */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* == 2. == */
+/* == Sora ==  */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+/* == 3. ==  */
+/* == Inter ==  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Subtitles Related Fonts */
+
+/* 1. Inter  */
+/* Already imported  */
+
+/* 2. Montserrat  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 3. Mulish  */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+/* 4. Sora  */
+/* Already imported  */
+
+/* 5. TT Chocolates  */
+@font-face {
+  font-family: "TT Chocolates";
+  src: url("./fonts/tt-chocolates-cufonfonts/TT\ Chocolates\ Regular.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Chocolates";
+  src: url("./fonts/tt-chocolates-cufonfonts/TT\ Chocolates\ Medium\ Italic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Chocolates";
+  src: url("./fonts/tt-chocolates-cufonfonts/TT\ Chocolates\ Light\ Italic.otf")
+    format("otf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TT Chocolates";
+  src: url("./fonts/tt-chocolates-cufonfonts/TT\ Chocolates\ Bold.otf")
+    format("otf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Chocolates";
+  src: url("./fonts/tt-chocolates-cufonfonts/TT\ Chocolates\ Bold\ Italic.otf")
+    format("otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* 6. Komika Axis  */
+@font-face {
+  font-family: "Komika Axis";
+  src: url("./fonts/komika_axis/KOMIKAX_.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 7. Cocogoose  */
+@font-face {
+  font-family: "Cocogoose";
+  src: url("./fonts/cocogoose/Cocogoose\ Pro\ Light-trial.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("./fonts/cocogoose/Cocogoose\ Pro\ Italic-trial.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("./fonts/cocogoose/Cocogoose\ Pro-trial.ttf") format("ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* 8. Open Sans  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* 9. Roboto  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* 10. Archivo  */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* 11. Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+/* Css of Toggle switch */
+
+.toggle-control {
+  display: block;
+  position: relative;
+  padding-left: 100px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+.toggle-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-control input:checked ~ .control {
+  background-color: #084A9B;
+}
+.toggle-control input:checked ~ .control::before {
+  background: #084A9B;
+  left: 19px;
+  transform: scale(1);
+  top: 3px;
+}
+.toggle-control input:checked ~ .control::after {
+  background: white;
+  left: 30px;
+}
+.toggle-control .control {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  height: 31px;
+  width: 59px;
+  border-radius: 25px;
+  background-color: white;
+  transition: background-color 0.125s ease-in;
+}
+.toggle-control .control::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0px;
+  top: 0px;
+  border-radius: 50%;
+  transform: scale(0);
+  background: #62ccff;
+  z-index: 5;
+  transition: all 0.125s ease-in;
+}
+.toggle-control .control::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 25px;
+  background: #fff89e;
+  transition: all 0.125s ease-in;
+}
+
+
